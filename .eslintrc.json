@@ -30,6 +30,7 @@
   ],
   "rules": {
     "prettier/prettier": "error",
+    "no-use-before-define": "off",
     "no-unused-expressions": "off",
     "spaced-comment": "off",
     "react/prop-types": "off",

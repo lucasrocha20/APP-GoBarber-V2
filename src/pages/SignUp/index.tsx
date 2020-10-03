@@ -17,6 +17,8 @@ import * as Yup from 'yup';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
+import api from '../../services/api';
+
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles';
@@ -52,7 +54,7 @@ const SignUp: React.FC = () => {
           abortEarly: false,
         });
 
-        // await api.post('/users', data);
+        await api.post('/users', data);
 
         Alert.alert(
           'Cadastro realizado com sucesso!',
